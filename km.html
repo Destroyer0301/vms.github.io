@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="km.css">
+    <title>Digital</title>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div class="content">
+        <img src="moon.png" id="icon">
+        <h1><span>What</span> is <span>Digital</span> marketing</h1>
+        <p><span>In a nutshell, digital marketing refers to any marketing methods conducted through electronic devices which utilize some form of a computer. This includes online marketing efforts conducted on the internet. In the process of conducting digital marketing, a business might leverage websites, search engines, blogs, social media, video, email and similar channels to reach customers.</span>
+
+            Unlike traditional marketing—which is static and often referred to as “one-way” communication—digital marketing is an ever-changing, dynamic process. Stated otherwise, customers cannot interact with business through a billboard or print ad, whereas digital marketing provides an avenue for two-way communication between a business and its actual or prospective customers. 
+            
+            These days, screen time is at an all-time high for many people.<span>Digital marketing takes advantage of this reality, promoting business products and services across the internet. In this way, businesses ensure that their marketing efforts are more likely to reach customers, by targeting them where they spend most of their time.</span> 
+            
+            From startups to enterprise businesses, a multifaceted digital marketing approach can lead to significant commercial benefits. Successful digital marketing strategy generally involves a combination of various methods, including online advertising, search engine optimization and marketing, social media marketing and management and content creation, among others. 
+        </p>
+        <br>
+        <h2>Why <span>do</span> we <span>need</span> digital <span>marketing</span></h2>
+        <p>In a nutshell, digital marketing refers to any marketing methods conducted through electronic devices which utilize some form of a computer. This includes online marketing efforts conducted on the internet. In the process of conducting digital marketing, a business might leverage websites, search engines, blogs, social media, video, email and similar channels to reach customers.<br>
+
+            Unlike traditional marketing—which is static and often referred to as “one-way” communication—digital marketing is an ever-changing, dynamic process. Stated otherwise, customers cannot interact with business through a billboard or print ad, whereas digital marketing provides an avenue for two-way communication between a business and its actual or prospective customers. <br>
+            
+            <span>These days, screen time is at an all-time high for many people. Digital marketing takes advantage of this reality, promoting business products and services across the internet. In this way, businesses ensure that their marketing efforts are more likely to reach customers, by targeting them where they spend most of their time.<br>
+                From startups to enterprise businesses, a multifaceted digital marketing approach can lead to significant commercial benefits. Successful digital marketing strategy generally involves a combination of various methods, including online advertising, search engine optimization and marketing, social media marketing and management and content creation, among others. 
+                Digital marketing plays a valuable role in shaping consumer behavior in today’s world, but how does it positively impact businesses? And more importantly, why? Here are a few reasons why every business should prioritize digital marketing over traditional methods of advertising.<br>
+                Digital marketing levels the online playing field. When it comes to a business’s visibility on the web, just like opening a store, location is everything. Being easily noticeable on the web, getting a business’s name out there, and updating information frequently will bring customers to its door. 
+                </span><br>
+            Digital marketing helps businesses stay a step ahead of their competition. Digital marketing is the best way for a brand to get a leg up on its competition. Think SEO, organic search, local search, Google Adwords, social media, and blogs. Businesses want to reach as many people as possible, and this is significantly easier to achieve on the web than it is in person. 
+            <br>
+            Digital marketing is less expensive than traditional advertising. Traditional advertising can cost large sums of money, whether it be via television, radio, newspaper, magazine, or direct mail. Now business owners can find a cheap equivalent online. Think Youtube instead of television, blogs instead of magazines, social media instead of flyers, and podcasts instead of the radio.  Some of the digital equivalents to traditional advertising are free, and all can be much cheaper than their traditional counterparts if the business has someone to manage and develop its strategies.
+            <br><span>
+                Digital marketing delivers analytics. The good news about digital marketing is that an ad’s creators can find out how it is pulling through using analytics that can’t be executed with traditional methods of advertising. Analytic reports can quickly be pulled up to test ad campaigns and find out what is getting read, looked at, or bought.
+               </span> <br>
+            Digital marketing reaches mobile users. Digital marketing can be formatted to mobile devices in order to reach customers no matter where they may be. Once a business’s local search and digital presence have been optimized, it can rest assured that it will be found. Having a digital presence and local search optimization is vital as people increasingly rely on their phones’ web browsing capabilities.
+            <br>
+            Digital marketing builds brand recognition. Since there are so many channels on the web with marketing potential, getting the message out about new brands is easier than ever before. Shotgun marketing approaches will confuse potential customers. It is much better to invest in a succinct campaign and build onto it from there, maintaining a distinct voice and brand style.
+            <br><span>
+                Digital marketing allows businesses to monitor their brand. The great thing about digital marketing is that those who use it can easily check their reputation and engage with unsatisfied customers, making it possible for them to address negative press before it circulates too far and too wide. Just because a business doesn’t take advantage of the web and social media doesn’t mean that its customers don’t. It is far better to know what is going on as it happens than to find out the hard way along with everyone else. 
+                </span><br>
+            Digital marketing can help brands develop trust with their audience. If a business is following its customers on social media and reaching out, commenting, and showing them that they care, it will gain trust, camaraderie, and friendships, in addition to more customers. There is nothing greater than engaging with a customer online and seeing them come into the store later to say how much it meant to them that the business took the time to connect. It is the small things a business can do that often make the most difference. <br>
+            <br><span>
+                Digital marketing provides businesses with additional sales channels. Think of digital marketing as branches off of a brick and mortar business. One branch of the business contains social media posts with tips, advice, local news, and events involving the brand. Another branch hosts the business’s blog, which serves to educate, inspire, and entertain its audience. Branching off from these main channels are landing pages and blog posts for different products. Add in Youtube videos, and the business can be everywhere on the web, delivering its message and brand, and promoting its products and services. 
+                </span><br>
+        </p>
+    
+        </div>
+        <script type="text/javascript">
+            let progress=document.getElementById('progressbar');
+            let totalheight=document.body.scrollHeight - window.innerHeight;
+            window.onscroll=function(){
+                let progressheight=(window.pageYOffset/totalheight)*100;
+                progress.style.height=progressheight + "%";
+            }
+        </script>
+        <script>
+            var icon=document.getElementById("icon");
+            icon.onclick=function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src="sun.png";
+                }
+                    else{
+                        icon.src="moon.png";
+                    }
+                }
+        
+        </script>
+    </body>
+</html>

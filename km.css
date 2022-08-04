@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color: #edf2fc;
+    --second-color: #212121;
+    --third-color: black;
+    
+}
+body{
+    background-color: var(--main-color);
+}
+.dark-theme{
+    --main-color: #000106;
+    --second-color: #fff;
+    --third-color: orangered;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+    background-color: orangered;
+    border-radius: 20px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.content h1{
+    color: var(--second-color);
+    margin: 20px;
+    padding: 10px;
+    font-size: 50px;
+}
+.content h2{
+    color: var(--second-color);
+    margin: 20px;
+    padding: 10px;
+    font-size: 50px;
+}
+.content  p{
+    color: var(--second-color);
+    margin: 15px;
+    padding: 5px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+span{
+    color: var(--third-color);
+}
+::-webkit-scrollbar{
+    width:0;
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    border-radius: 20px;
+    border: 1.3px solid var(--third-color);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        filter:hue-rotate(0deg);
+    }
+50%{
+    filter: hue-rotate(360deg);
+}
+}
+#progressbar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(10px);
+}
+#progressbar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter: blur(30px);
+}
